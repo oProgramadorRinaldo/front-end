@@ -1,0 +1,23 @@
+.payment, .shipping {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 14px;
+  }
+  .shipping{
+    color: #3182CE;
+  }
+  .payment::before,
+  .shipping::after {
+    content: "";
+    position: absolute;
+    top: 0.75em;
+    width: 1em;
+    height: 0.05em;
+    background-color: #3182CE;
+    left: -1.60em;
+  }
+  .shipping::after {
+    left: initial;
+    right: -1.60em;
+  }
